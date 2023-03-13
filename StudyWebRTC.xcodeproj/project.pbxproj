@@ -104,6 +104,7 @@
 		F183361229BEE21200D872CE /* StudyWebRTC */ = {
 			isa = PBXGroup;
 			children = (
+				F183362129BEE21400D872CE /* Info.plist */,
 				F183364B29BF010800D872CE /* Services */,
 				F183364C29BF011D00D872CE /* Screens */,
 				F183364D29BF012700D872CE /* Extensions */,
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				F183361E29BEE21400D872CE /* LaunchScreen.storyboard */,
-				F183362129BEE21400D872CE /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
