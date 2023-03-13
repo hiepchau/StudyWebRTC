@@ -16,6 +16,16 @@
 		F183365029BF01AB00D872CE /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183364F29BF01AB00D872CE /* RTCStates.swift */; };
 		F183365229BF01B300D872CE /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365129BF01B300D872CE /* SessionDescription.swift */; };
 		F183365429BF01BE00D872CE /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365329BF01BE00D872CE /* IceCandidate.swift */; };
+		F183365729BF035300D872CE /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365629BF035300D872CE /* WebSocketProvider.swift */; };
+		F183365929BF036500D872CE /* StarscreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365829BF036500D872CE /* StarscreamProvider.swift */; };
+		F183365B29BF037400D872CE /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365A29BF037400D872CE /* NativeWebSocket.swift */; };
+		F183365D29BF03AF00D872CE /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365C29BF03AF00D872CE /* SignalingClient.swift */; };
+		F183365F29BF03BA00D872CE /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365E29BF03BA00D872CE /* WebRTCClient.swift */; };
+		F183366129BF03C200D872CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183366029BF03C200D872CE /* Message.swift */; };
+		F183366A29BF04C700D872CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183366829BF04C700D872CE /* MainViewController.swift */; };
+		F183366B29BF04C700D872CE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F183366929BF04C700D872CE /* MainViewController.xib */; };
+		F183366E29BF04E000D872CE /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183366C29BF04E000D872CE /* VideoViewController.swift */; };
+		F183366F29BF04E000D872CE /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F183366D29BF04E000D872CE /* VideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,16 @@
 		F183364F29BF01AB00D872CE /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
 		F183365129BF01B300D872CE /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
 		F183365329BF01BE00D872CE /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
+		F183365629BF035300D872CE /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
+		F183365829BF036500D872CE /* StarscreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamProvider.swift; sourceTree = "<group>"; };
+		F183365A29BF037400D872CE /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
+		F183365C29BF03AF00D872CE /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		F183365E29BF03BA00D872CE /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		F183366029BF03C200D872CE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		F183366829BF04C700D872CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F183366929BF04C700D872CE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F183366C29BF04E000D872CE /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		F183366D29BF04E000D872CE /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +128,10 @@
 		F183364B29BF010800D872CE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F183365529BF033400D872CE /* WebSocketProvider */,
+				F183365C29BF03AF00D872CE /* SignalingClient.swift */,
+				F183365E29BF03BA00D872CE /* WebRTCClient.swift */,
+				F183366029BF03C200D872CE /* Message.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -115,6 +139,8 @@
 		F183364C29BF011D00D872CE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F183366429BF046200D872CE /* MainScreen */,
+				F183366529BF046900D872CE /* VideoScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -135,6 +161,34 @@
 				F183361C29BEE21400D872CE /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F183365529BF033400D872CE /* WebSocketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F183365629BF035300D872CE /* WebSocketProvider.swift */,
+				F183365829BF036500D872CE /* StarscreamProvider.swift */,
+				F183365A29BF037400D872CE /* NativeWebSocket.swift */,
+			);
+			path = WebSocketProvider;
+			sourceTree = "<group>";
+		};
+		F183366429BF046200D872CE /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F183366829BF04C700D872CE /* MainViewController.swift */,
+				F183366929BF04C700D872CE /* MainViewController.xib */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		F183366529BF046900D872CE /* VideoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F183366C29BF04E000D872CE /* VideoViewController.swift */,
+				F183366D29BF04E000D872CE /* VideoViewController.xib */,
+			);
+			path = VideoScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F183362029BEE21400D872CE /* LaunchScreen.storyboard in Resources */,
+				F183366B29BF04C700D872CE /* MainViewController.xib in Resources */,
+				F183366F29BF04E000D872CE /* VideoViewController.xib in Resources */,
 				F183361D29BEE21400D872CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,10 +308,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F183365229BF01B300D872CE /* SessionDescription.swift in Sources */,
+				F183366A29BF04C700D872CE /* MainViewController.swift in Sources */,
 				F183364829BEFDD200D872CE /* Config.swift in Sources */,
 				F183361429BEE21200D872CE /* AppDelegate.swift in Sources */,
+				F183365929BF036500D872CE /* StarscreamProvider.swift in Sources */,
+				F183365729BF035300D872CE /* WebSocketProvider.swift in Sources */,
+				F183365D29BF03AF00D872CE /* SignalingClient.swift in Sources */,
 				F183361629BEE21200D872CE /* SceneDelegate.swift in Sources */,
+				F183366E29BF04E000D872CE /* VideoViewController.swift in Sources */,
+				F183365B29BF037400D872CE /* NativeWebSocket.swift in Sources */,
 				F183365029BF01AB00D872CE /* RTCStates.swift in Sources */,
+				F183366129BF03C200D872CE /* Message.swift in Sources */,
+				F183365F29BF03BA00D872CE /* WebRTCClient.swift in Sources */,
 				F183365429BF01BE00D872CE /* IceCandidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

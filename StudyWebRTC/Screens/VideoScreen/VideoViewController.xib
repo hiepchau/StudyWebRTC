@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController" customModule="StudyWebRTC" customModuleProvider="target">
+            <connections>
+                <outlet property="localVideoView" destination="JHu-fC-Lir" id="Dhd-xV-GkN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHu-fC-Lir">
+                    <rect key="frame" x="243.33333333333337" y="585" width="129.66666666666663" height="213"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-Db-RfF">
+                    <rect key="frame" x="20" y="79" width="34" height="30"/>
+                    <viewLayoutGuide key="safeArea" id="QfB-lc-tdV"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="backDidTap:" destination="-1" eventType="touchUpInside" id="gej-6q-rnO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JHu-fC-Lir" secondAttribute="trailing" constant="20" id="B57-IQ-Iyb"/>
+                <constraint firstItem="fMU-Db-RfF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LbF-Aw-bLv"/>
+                <constraint firstItem="fMU-Db-RfF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="RvX-qm-Wii"/>
+                <constraint firstItem="JHu-fC-Lir" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="eie-Hj-3Zc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JHu-fC-Lir" secondAttribute="bottom" constant="20" id="oXL-ch-x0j"/>
+                <constraint firstItem="JHu-fC-Lir" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.33" id="qLj-3u-7Lo"/>
+            </constraints>
+            <point key="canvasLocation" x="-97" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
