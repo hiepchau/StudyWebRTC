@@ -5,7 +5,7 @@
       location = "group:StudyWebRTC.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:signaling/Swift/SignalingServer.xcodeproj">
+      location = "group:Server/Swift/SignalingServer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
