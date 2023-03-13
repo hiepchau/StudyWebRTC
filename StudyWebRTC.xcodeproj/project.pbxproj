@@ -10,10 +10,12 @@
 		2A3734944CA051F44641B19A /* Pods_StudyWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB312E66DAF100C33C316AC /* Pods_StudyWebRTC.framework */; };
 		F183361429BEE21200D872CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183361329BEE21200D872CE /* AppDelegate.swift */; };
 		F183361629BEE21200D872CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183361529BEE21200D872CE /* SceneDelegate.swift */; };
-		F183361829BEE21200D872CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183361729BEE21200D872CE /* ViewController.swift */; };
-		F183361B29BEE21200D872CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F183361929BEE21200D872CE /* Main.storyboard */; };
 		F183361D29BEE21400D872CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F183361C29BEE21400D872CE /* Assets.xcassets */; };
 		F183362029BEE21400D872CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F183361E29BEE21400D872CE /* LaunchScreen.storyboard */; };
+		F183364829BEFDD200D872CE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183364729BEFDD200D872CE /* Config.swift */; };
+		F183365029BF01AB00D872CE /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183364F29BF01AB00D872CE /* RTCStates.swift */; };
+		F183365229BF01B300D872CE /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365129BF01B300D872CE /* SessionDescription.swift */; };
+		F183365429BF01BE00D872CE /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F183365329BF01BE00D872CE /* IceCandidate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +25,13 @@
 		F183361029BEE21200D872CE /* StudyWebRTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyWebRTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F183361329BEE21200D872CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F183361529BEE21200D872CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F183361729BEE21200D872CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F183361A29BEE21200D872CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F183361C29BEE21400D872CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F183361F29BEE21400D872CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F183362129BEE21400D872CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F183364729BEFDD200D872CE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F183364F29BF01AB00D872CE /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		F183365129BF01B300D872CE /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		F183365329BF01BE00D872CE /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				1D360E354D2768C5DE0A7787 /* Pods-StudyWebRTC.debug.xcconfig */,
 				BFA5DAF7B65C1639E5D0C520 /* Pods-StudyWebRTC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +84,57 @@
 		F183361229BEE21200D872CE /* StudyWebRTC */ = {
 			isa = PBXGroup;
 			children = (
-				F183361329BEE21200D872CE /* AppDelegate.swift */,
+				F183364B29BF010800D872CE /* Services */,
+				F183364C29BF011D00D872CE /* Screens */,
+				F183364D29BF012700D872CE /* Extensions */,
 				F183361529BEE21200D872CE /* SceneDelegate.swift */,
-				F183361729BEE21200D872CE /* ViewController.swift */,
-				F183361929BEE21200D872CE /* Main.storyboard */,
-				F183361C29BEE21400D872CE /* Assets.xcassets */,
+				F183361329BEE21200D872CE /* AppDelegate.swift */,
+				F183364729BEFDD200D872CE /* Config.swift */,
+				F183364E29BF013300D872CE /* Resources */,
+				F183364929BF00B800D872CE /* SupportingFiles */,
+			);
+			path = StudyWebRTC;
+			sourceTree = "<group>";
+		};
+		F183364929BF00B800D872CE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				F183361E29BEE21400D872CE /* LaunchScreen.storyboard */,
 				F183362129BEE21400D872CE /* Info.plist */,
 			);
-			path = StudyWebRTC;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F183364B29BF010800D872CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F183364C29BF011D00D872CE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F183364D29BF012700D872CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F183364F29BF01AB00D872CE /* RTCStates.swift */,
+				F183365129BF01B300D872CE /* SessionDescription.swift */,
+				F183365329BF01BE00D872CE /* IceCandidate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F183364E29BF013300D872CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F183361C29BEE21400D872CE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +199,6 @@
 			files = (
 				F183362029BEE21400D872CE /* LaunchScreen.storyboard in Resources */,
 				F183361D29BEE21400D872CE /* Assets.xcassets in Resources */,
-				F183361B29BEE21200D872CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +251,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F183361829BEE21200D872CE /* ViewController.swift in Sources */,
+				F183365229BF01B300D872CE /* SessionDescription.swift in Sources */,
+				F183364829BEFDD200D872CE /* Config.swift in Sources */,
 				F183361429BEE21200D872CE /* AppDelegate.swift in Sources */,
 				F183361629BEE21200D872CE /* SceneDelegate.swift in Sources */,
+				F183365029BF01AB00D872CE /* RTCStates.swift in Sources */,
+				F183365429BF01BE00D872CE /* IceCandidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F183361929BEE21200D872CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F183361A29BEE21200D872CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F183361E29BEE21400D872CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
