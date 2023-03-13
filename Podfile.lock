@@ -1,0 +1,20 @@
+PODS:
+  - Starscream (4.0.4)
+  - WebRTC (63.11.20455)
+
+DEPENDENCIES:
+  - Starscream (~> 4.0.0)
+  - WebRTC
+
+SPEC REPOS:
+  trunk:
+    - Starscream
+    - WebRTC
+
+SPEC CHECKSUMS:
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  WebRTC: f2a6203584745fe53532633397557876b5d71640
+
+PODFILE CHECKSUM: d015357901141fbd54b8aeee31f9f3d1f94daa9f
+
+COCOAPODS: 1.12.0
